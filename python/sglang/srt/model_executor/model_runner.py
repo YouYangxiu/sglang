@@ -423,7 +423,7 @@ class ModelRunner:
             # self.profile_scheduler.print_profile_data()
             if self.plot_count % 100 == 0:
                 self.profile_scheduler.plot_profile_data()
-                self.profile_scheduler.print_profile_data()
+                # self.profile_scheduler.print_profile_data()
         if self.is_multimodal_model and forward_mode == ForwardMode.EXTEND:
             return self.forward_extend_multi_modal(batch)
         elif forward_mode == ForwardMode.DECODE:

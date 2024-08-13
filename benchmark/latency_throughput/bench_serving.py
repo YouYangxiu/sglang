@@ -351,6 +351,9 @@ if __name__ == "__main__":
         default=1,
         help="Generates `best_of` sequences per prompt and " "returns the best one.",
     )
+    # The above code is adding a command-line argument `--use-beam-search` to a parser object. This
+    # argument will be a boolean flag that can be set when running the script. If the flag is set, it
+    # will store `True`, indicating that beam search should be used.
     parser.add_argument("--use-beam-search", action="store_true")
     parser.add_argument(
         "--num-prompts", type=int, default=1000, help="Number of prompts to process."
